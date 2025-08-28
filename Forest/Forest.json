@@ -1,0 +1,22 @@
+{
+    "Name": "Forest",
+    "Author": "Dorb",
+    "Version": "1.0.0",
+    "Description": "Forest plugin — shows players in area with tabbed UI.",
+    "DalamudApiLevel": 13,
+    "IconResource": "Resources/icon.png",
+    "Punchline": "A plugin to show players in the area with a tabbed UI.",
+    "IconUrl": "https://raw.githubusercontent.com/dorbian/forest_repo/main/resources/icon.png",
+    "RepoUrl": "https://github.com/dorbian/forest_repo",
+    "Tags": [
+        "UI",
+        "Players",
+        "Tabbed"
+    ],
+    "CategoryTags": [
+        "UI",
+        "Players"
+    ],
+    "InternalName": "Forest",
+    "AssemblyVersion": "0.0.0.1"
+}

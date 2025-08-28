@@ -1,0 +1,15 @@
+C:\Users\dorbi\source\repos\Forest\Forest\obj\x64\Debug\Forest.csproj.AssemblyReference.cache
+C:\Users\dorbi\source\repos\Forest\Forest\obj\x64\Debug\Forest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dorbi\source\repos\Forest\Forest\obj\x64\Debug\Forest.AssemblyInfoInputs.cache
+C:\Users\dorbi\source\repos\Forest\Forest\obj\x64\Debug\Forest.AssemblyInfo.cs
+C:\Users\dorbi\source\repos\Forest\Forest\obj\x64\Debug\Forest.csproj.CoreCompileInputs.cache
+C:\Users\dorbi\source\repos\Forest\Forest\bin\x64\Debug\Forest.deps.json
+C:\Users\dorbi\source\repos\Forest\Forest\bin\x64\Debug\Forest.dll
+C:\Users\dorbi\source\repos\Forest\Forest\bin\x64\Debug\ImGui.NET.dll
+C:\Users\dorbi\source\repos\Forest\Forest\bin\x64\Debug\runtimes\linux-x64\native\libcimgui.so
+C:\Users\dorbi\source\repos\Forest\Forest\bin\x64\Debug\runtimes\osx\native\libcimgui.dylib
+C:\Users\dorbi\source\repos\Forest\Forest\bin\x64\Debug\runtimes\win-arm64\native\cimgui.dll
+C:\Users\dorbi\source\repos\Forest\Forest\bin\x64\Debug\runtimes\win-x64\native\cimgui.dll
+C:\Users\dorbi\source\repos\Forest\Forest\bin\x64\Debug\runtimes\win-x86\native\cimgui.dll
+C:\Users\dorbi\source\repos\Forest\Forest\obj\x64\Debug\Forest.csproj.Up2Date
+C:\Users\dorbi\source\repos\Forest\Forest\obj\x64\Debug\Forest.dll

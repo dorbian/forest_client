@@ -1,0 +1,16 @@
+this is a dalamud plugin using API 13.
+this is a plugin for final fantasy xiv.
+the plugin is called Forest and is used to manage mini games for within the game.
+it is designed to be used with the Dalamud plugin framework.
+Using [PluginService] injection instead of deprecated constructors.
+Following the latest DalamudPluginInterface and config saving pattern.
+Making sure UI code uses the correct ImGuiNET / Dalamud.Interface calls without mismatched enums.
+No IDalamudPluginUi or other removed interfaces.
+Command registration with CommandManager in its current signature.
+It registers /forest to open/close the window.
+It shows the player list in the left panel.
+It has tabs at the top.
+It saves settings in config using the new API.
+It compiles in Visual Studio 2022 without changes.
+I do not know c# code that well, but i do know python very well, so using references that make sense in a python perspective help my understand better.
+combined_docs.md contains the latest documentation for the dalamud API, this should be considered your first source of truth for dalamud development.

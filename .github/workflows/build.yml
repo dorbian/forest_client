@@ -1,0 +1,54 @@
+name: Build & Zip (.NET)
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+
+env:
+  DOTNET_VERSION: "9.0.x"                 # Change if you target a different SDK
+  SOLUTION_PATH: "Forest.sln"          # ← set to your .sln
+  PROJECT_PATH: "Forest/Forest.csproj"  # <- << SET THIS to your .csproj path
+  CONFIGURATION: "Release"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive           # ← important if API/shared is a submodule
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      # Dalamud runtime for the SDK check
+      - name: Fetch Dalamud runtime for CI
+        run: |
+          set -e
+          wget -q https://goatcorp.github.io/dalamud-distrib/latest.zip
+          mkdir -p dalamud
+          unzip -q latest.zip -d dalamud
+          echo "DALAMUD_HOME=$PWD/dalamud" >> $GITHUB_ENV
+
+      - name: Restore (solution)
+        run: dotnet restore "${{ env.SOLUTION_PATH }}"
+
+      - name: Pack plugin
+        run: dotnet build "${{ env.SOLUTION_PATH }}" -c "${{ env.CONFIGURATION }}" -p:GenerateDalamudZip=true
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            **/bin/x64/Release/Forest/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
